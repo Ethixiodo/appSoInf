@@ -18,5 +18,7 @@ from django.urls import path
 from web01 import views
 
 urlpatterns = [
-    path('', views.home, name='home')
+    path('', views.home, name='home'),
+    path('generate-password', views.generatedPassword, name='password'),
+    path('about', views.about, name='about'),
 ]
